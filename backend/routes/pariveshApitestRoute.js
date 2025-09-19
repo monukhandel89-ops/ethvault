@@ -3,7 +3,6 @@ const router = express.Router();
 const pariveshApiTestController = require('../controllers/pariveshApiTestController');
 const {
   mint,
-  transfer,
   balance
 } = require("../controllers/pariveshApiTestController");
 
