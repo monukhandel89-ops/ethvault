@@ -1,0 +1,61 @@
+{
+	"info": {
+		"_postman_id": "db0725e1-d391-4e4f-b06c-e765174f8b54",
+		"name": "Task_Contract_Read",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Mint",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"to\": \"0xdAE79EeD7cf0db1e8957CC4c0aC775817Ec4FA1c\",\r\n    \"amount\": \"1000\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4002/api/pariveshApitestRoute/mint",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4002",
+					"path": [
+						"api",
+						"pariveshApitestRoute",
+						"mint"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "balance",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4002/api/pariveshApitestRoute/balance/0xdAE79EeD7cf0db1e8957CC4c0aC775817Ec4FA1c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4002",
+					"path": [
+						"api",
+						"pariveshApitestRoute",
+						"balance",
+						"0xdAE79EeD7cf0db1e8957CC4c0aC775817Ec4FA1c"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
