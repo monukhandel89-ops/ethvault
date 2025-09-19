@@ -19,13 +19,13 @@ async function initContract() {
     const deployedNetwork = contractJson.networks[networkId];
 
     if (!deployedNetwork) {
-        console.error("❌ Contract not deployed on this network.");
+        console.error("Contract not deployed on this network.");
         process.exit(1);
     }
 
     contract = new web3.eth.Contract(contractJson.abi, deployedNetwork.address);
     accounts = await web3.eth.getAccounts();
-    console.log("✅ Contract initialized");
+    console.log("Contract initialized");
 }
 
 initContract();
